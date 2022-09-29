@@ -1,4 +1,4 @@
-function atualizarQuantidade () {
+function atualizarQuantidade() {
     document.getElementById('numeros').innerHTML = buscar().length;    //ajuste da contagem de tarefas no titulo
 }
 
@@ -33,10 +33,11 @@ function addTarefa() {                             //ajuste da validação para 
         return;
     }
 
-    salvar(titulo, input_prioridade.value)
+    salvar(titulo, input_prioridade.value);
     document.getElementById('input_nova_tarefa').value ='';
     atualizarQuantidade();
     listarTarefas();
 }
 
+atualizarQuantidade();
 listarTarefas();
